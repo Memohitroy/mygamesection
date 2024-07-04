@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #e91e63;
+            font-size: 2.5em;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #e91e63, 0 0 20px #e91e63, 0 0 30px #e91e63, 0 0 40px #e91e63, 0 0 50px #e91e63, 0 0 60px #e91e63, 0 0 70px #e91e63;
+            }
+            to {
+                text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4, 0 0 80px #ff69b4;
+            }
+        }
+        .greeting {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .game-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .game-list li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #2c2c2c;
+            border-radius: 5px;
+        }
+        .game-list img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .game-list a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1.2em;
+        }
+        .game-list a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+   <div class="instagram-link">
+    <a href="https://www.instagram.com/mohitroy2004/" target="_blank" style="color: #e91e63; text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" style="vertical-align: middle;">
+        <span style="font-size: 1.5em; animation: glow 1s ease-in-out infinite alternate;">Follow me on Instagram</span>
+    </a>
+</div>
+
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="greeting">Welcome, Users!  - SOURCE CODE KE LIYE DM KARO INSTA ID-mohitroy2004</h1>
+        <ul class="game-list">
+            <li>
+                <img src="card emoji.jpg" alt="Game 1">
+                <a href="https://memohitroy.github.io/emojigames/" target="_blank">Game 1</a>
+            </li>
+            <li>
+                <img src="kbc.jpg" alt="Game 2">
+                <a href="https://memohitroy.github.io/kbc/" target="_blank">Game 2</a>
+            </li>
+            <li>
+                <img src="pacman.jpg" alt="Game 3">
+                <a href="https://memohitroy.github.io/msPacMan/" target="_blank">Game 3</a>
+            </li>
+            <li>
+                <img src="stickman.jpeg" alt="Game 3">
+                <a href="https://memohitroy.github.io/stickman/" target="_blank">Game 3</a>
+            </li>
+            <!-- Add more games here -->
+        </ul>
+    </div>
+    <script>
+        function updateGreeting() {
+            const greetingElement = document.querySelector('.greeting');
+            const now = new Date();
+            const hours = now.getHours();
+            let greeting = 'Welcome, Users!  -  - SOURCE CODE KE LIYE DM KARO INSTA ID-mohitroy2004';
+
+            if (hours >= 0 && hours < 12) {
+                greeting = 'Good Morning, Users!';
+            } else if (hours >= 12 && hours < 18) {
+                greeting = 'Good Afternoon, Users!';
+            } else {
+                greeting = 'Good Night, Users!';
+            }
+
+            greetingElement.textContent = greeting;
+        }
+
+        updateGreeting();
+    </script>
+</body>
+</html>
