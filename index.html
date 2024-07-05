@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHIT ROY Gaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="intro" class="intro-container">
+        <h1 class="intro-text">Welcome to <span class="highlight">MOHIT ROY</span> Gaming Side</h1>
+    </div>
+    <div class="instagram-link">
+        <a href="https://www.instagram.com/mohitroy2004/" target="_blank" style="color: #e91e63; text-decoration: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30" style="vertical-align: middle;">
+            <span style="font-size: 1.5em; animation: glow 1s ease-in-out infinite alternate;">Follow me on Instagram</span>
+        </a>
+        
+    </div>
+    <div class="container">
+        <h1 class="greeting">Good Morning, Users! - SOURCE CODE KE LIYE DM KARO INSTA ID-mohitroy2004</h1>
+        <ul class="game-list">
+            <li>
+                <img src="card emoji.jpg" alt="CLICK THERE! and ENJOY CARD PUZZULE GAME">
+                <a href="https://memohitroy.github.io/emojigames/" target="_blank">CLICK THERE! and ENJOY CARD PUZZULE GAME</a>
+                <button id="like-button-1" class="like-button" onclick="likeGame(1)">Like</button>
+                <span class="like-count" id="like-count-1">0 Likes</span>
+            </li>
+            <li>
+                <img src="kbc.jpg" alt="CLICK THERE! and ENJOY KON BANEEGA CARORE PATI GAME">
+                <a href="https://memohitroy.github.io/kbc/" target="_blank">CLICK THERE! and ENJOY KON BANEEGA CARORE PATI GAME</a>
+                <button id="like-button-2" class="like-button" onclick="likeGame(2)">Like</button>
+                <span class="like-count" id="like-count-2">0 Likes</span>
+            </li>
+            <li>
+                <img src="pacman.jpg" alt="CLICK THERE! and ENJOY PACMAN GAME">
+                <a href="https://memohitroy.github.io/msPacMan/" target="_blank">CLICK THERE! and ENJOY PACMAN GAME</a>
+                <button id="like-button-3" class="like-button" onclick="likeGame(3)">Like</button>
+                <span class="like-count" id="like-count-3">0 Likes</span>
+            </li>
+            <li>
+                <img src="stickman.jpeg" alt="CLICK THERE! and ENJOY STICKMAN GAME">
+                <a href="https://memohitroy.github.io/stickman/" target="_blank">CLICK THERE! and ENJOY STICKMAN GAME</a>
+                <button id="like-button-4" class="like-button" onclick="likeGame(4)">Like</button>
+                <span class="like-count" id="like-count-4">0 Likes</span>
+            </li>
+            <!-- Add more games here -->
+        </ul>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        // Timeout to remove intro after 5 seconds
+        setTimeout(function() {
+            var intro = document.getElementById('intro');
+            intro.style.display = 'none';
+        }, 5000);
+    </script>
+</body>
+
+</html>
+
+
+
+
+
